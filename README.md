@@ -1,32 +1,40 @@
-# SCHAEZEL Skills
+# SCHAEZEL Skill Collection
 
-> Claude Code Skills 集合
+A collection of [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) skills.
 
-## Skills
+## Available Skills
 
-| Skill | 说明 |
-|-------|------|
-| [imitate](./imitate/) | 模仿领域强者对话 |
+| Skill | Description |
+|-------|-------------|
+| [imitate](./imitate/) | Multi-perspective dialogue. Simulate conversations with top experts in any field. |
 
-## 安装
+## Installation
 
-### 方式一：复制文件
-
-```bash
-# Windows
-copy imitate\SKILL.md %USERPROFILE%\.claude\skills\imitate\
-
-# Linux/Mac
-cp -r imitate/ ~/.claude/skills/
-```
-
-### 方式二：OpenClaw 用户
+### Claude Code
 
 ```bash
-npx clawhub@latest install SCHAEZEL/imitate-skill
+# Clone the repository
+git clone https://github.com/SCHAEZEL/schaezel-skill.git ~/.claude/skills/schaezel-skill
 ```
 
-## 作者
+Or manually copy individual skill directories to `~/.claude/skills/`.
 
-- GitHub: [SCHAEZEL](https://github.com/SCHAEZEL)
-- 主页: https://github.com/SCHAEZEL/SCHAEZEL-skills
+### OpenClaw
+
+```bash
+npx clawhub@latest install SCHAEZEL/imitate
+```
+
+## Structure
+
+```
+schaezel-skill/
+├── README.md           # This file
+└── imitate/
+    ├── SKILL.md       # Skill definition
+    └── README.md       # Skill documentation
+```
+
+## License
+
+MIT
